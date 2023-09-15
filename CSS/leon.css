@@ -80,6 +80,10 @@ body {
 .header .container .icon span:nth-child(2) {
   width: 75%;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .header .container .icon span:last-child {
   width: 100%;
@@ -95,10 +99,15 @@ body {
   top: calc(100% + 15px);
   display: none;
   z-index: 1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
-.header .links:hover ul {
+/* .header .links:hover ul {
   display: block;
-}
+} */
 .header .links ul::before {
   content: "";
   border-style: solid;
@@ -396,10 +405,21 @@ body {
   position: relative;
   width: 350px;
   height: 350px;
+  animation: up-and-down 5s linear infinite;
 }
 .about .image img {
   max-width: 100%;
 }
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -40px;
+  }
+}
+
 .about .about-contant .image::before {
   content: "";
   position: absolute;
