@@ -441,7 +441,6 @@ body {
   right: -105px;
   z-index: -1;
 }
-/* change */
 .about .about-contant .text {
   flex-basis: calc(100% - 550px);
 }
